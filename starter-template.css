@@ -7,7 +7,7 @@ body {
 }
 
 
-@media (min-width: @screen-md-min) {
+@media (min-width: @screen-sm-min) {
 .row {
 	padding-top: 1em;
   }
