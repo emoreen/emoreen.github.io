@@ -6,6 +6,11 @@ body {
   text-align: center;
 }
 
+
+@media (min-width: @screen-md-min) {
 .row {
 	padding-top: 1em;
+  }
 }
+
+
