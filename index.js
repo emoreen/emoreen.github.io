@@ -15,15 +15,17 @@ $(function(){
             format: "json"
             
         }, function( data ) {
+			
+			
       
-		$.each(data.photos.photo, function(p,photo){
-      
-      
-			alert(photo.title);
-      
+		//$.each(data.photos.photo, function(p,photo){
       
       
-			});
+			alert(data.photos.photo[0].id);
+      
+      
+      
+			//});
       
       
       
