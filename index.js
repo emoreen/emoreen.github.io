@@ -19,7 +19,7 @@ $(function(){
 		$.each(data.photo, function(p,photo){
       
       
-			alert(item.title);
+			alert(photo.title);
       
       
       
