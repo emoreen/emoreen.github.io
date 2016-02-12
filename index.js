@@ -4,7 +4,7 @@ $(function(){
 
       //alert( "Handler for .submit() called." );
       $(".row").remove();
-      
+      $("<div>").attr("class", "row").appendTo('#container [data-role="content"]');
       
       
       
