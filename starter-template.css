@@ -9,7 +9,7 @@
 
 
 @media (min-width: 768px) {
-	.row {
+	.col-md-4 {
 		padding-top: 1em;
 	}
 }
