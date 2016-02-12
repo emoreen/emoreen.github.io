@@ -1,6 +1,6 @@
 $(document).ready({
 
-   $('#mainsearch').submit(function () {
+   $('#srch-term').submit(function () {
 
       alert("Sub");
 
