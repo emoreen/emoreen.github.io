@@ -16,7 +16,7 @@ $(function(){
             
         }, function( data ) {
       
-		$.each(data.photo, function(p,photo){
+		$.each(data.photos.photo, function(p,photo){
       
       
 			alert(photo.title);
