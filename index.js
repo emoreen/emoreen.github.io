@@ -16,7 +16,14 @@ $(function(){
             
         }, function( data ) {
       
+		$.each(data.photo, function(p,photo){
       
+      
+			alert(item.title);
+      
+      
+      
+			});
       
       
       
