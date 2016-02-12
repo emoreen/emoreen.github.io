@@ -21,7 +21,7 @@ $(function(){
 		$.each(data.photos.photo, function(i,item){
       
       
-			alert(item);
+			alert(item.id);
       
       
       
