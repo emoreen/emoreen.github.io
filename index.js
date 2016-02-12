@@ -2,7 +2,15 @@ $(function(){
 
    $("#mainsearch").submit(function () {
 
-      alert( "Handler for .submit() called." );
+      //alert( "Handler for .submit() called." );
+      $(".row").remove();
+      
+      
+      
+      
+      
+      
+      
 
    }); 
 
