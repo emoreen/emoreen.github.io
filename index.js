@@ -1,12 +1,12 @@
-$(document).ready({
+//$(document).ready({
 
-   $('#srch-term').submit(function () {
+   //$('#srch-term').submit(function () {
 
-      alert("Sub");
+      //alert("Sub");
 
-   }); 
+   //}); 
 
-});
+//});
 
 
 $(window).scroll(function () {
