@@ -1,10 +1,10 @@
 //$(document).ready({
 
-   //$('#srch-term').submit(function () {
+   $("#mainsearch").submit(function () {
 
-      //alert("Sub");
+      alert( "Handler for .submit() called." );
 
-   //}); 
+   }); 
 
 //});
 
