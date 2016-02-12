@@ -1,16 +1,16 @@
 $(document).ready({
 
-   $('#mainsearch').submit(function() {
+   $('#mainsearch').submit(function () {
 
       alert("Sub");
 
    }); 
 
-})
+});
 
 
- $(window).scroll(function () {
+$(window).scroll(function () {
     if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
         alert("End Of The Page");
-    }
- })
+   }
+});
