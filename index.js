@@ -1,4 +1,4 @@
-//$(document).ready({
+$(function(){
 
    $("#mainsearch").submit(function () {
 
@@ -6,11 +6,13 @@
 
    }); 
 
-//});
-
 
 $(window).scroll(function () {
     if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
         alert("End Of The Page");
    }
+});
+
+
+
 });
