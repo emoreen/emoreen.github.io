@@ -1,8 +1,8 @@
 $(document).ready({
 
-   $('#contactForm').submit(function() {
+   $('#mainsearch').submit(function() {
 
-      //Do stuff here
+      alert("Sub");
 
    }); 
 
