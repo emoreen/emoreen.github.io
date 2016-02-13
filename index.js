@@ -22,10 +22,11 @@ $(function(){
       
       
       
-      $("<div/>").attr("class", "col-md-4").append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "img-responsive").wrap("<a href=" + item.id + "></a>")).appendTo(".row");
+      $("<div/>").attr("class", "col-md-4").append($("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "img-responsive"))).appendTo(".row");
       
       
 		//$("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>");
+      
       
       
 			//alert(item.id);
