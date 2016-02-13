@@ -30,9 +30,9 @@
 }
 
 .row {
-  -webkit-column-count: 200px;
-  -moz-column-count: 200px;
-  column-count: 200px;	
+  -webkit-column-count: 3 100px;
+  -moz-column-count: 3 100px;
+  column-count: 3 100px;	
 	
 }
 
