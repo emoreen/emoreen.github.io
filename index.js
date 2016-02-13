@@ -12,6 +12,7 @@ $(function(){
         {
 			
             text: $("#srch-term").val(),
+            is_commons: "true",
             format: "json"
             
         }, function( data ) {
@@ -62,6 +63,7 @@ $(window).scroll(function () {
         {
 			
             text: $("#srch-term").val(),
+            is_commons: "true",
             format: "json",
             page: page
             
