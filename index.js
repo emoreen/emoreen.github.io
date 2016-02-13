@@ -8,7 +8,7 @@ $(function(){
       
       
       
-       $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ae34bd27a7623c8315fbe0cc73cd9ca6&per_page=12&nojsoncallback=1",
+       $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ae34bd27a7623c8315fbe0cc73cd9ca6&per_page=12&sort=relevance&nojsoncallback=1",
         {
 			
             text: $("#srch-term").val(),
@@ -58,7 +58,7 @@ $(window).scroll(function () {
 
 
 
-       $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ae34bd27a7623c8315fbe0cc73cd9ca6&per_page=12&nojsoncallback=1",
+       $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ae34bd27a7623c8315fbe0cc73cd9ca6&per_page=12&sort=relevance&nojsoncallback=1",
         {
 			
             text: $("#srch-term").val(),
