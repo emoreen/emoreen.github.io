@@ -3,6 +3,7 @@ $(function(){
    $("#mainsearch").submit(function () {
 
       $(".img-responsive").remove();
+      $(".col-md-12").remove();
       
       
       
