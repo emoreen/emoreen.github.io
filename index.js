@@ -44,7 +44,7 @@ $(window).scroll(function () {
     if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
 
 
-	$("<div/>").attr("id", "pagerow"+page).attr("class", "row").appendTo("#maincont");
+	$("<div/>").attr("id", "pagerow"+page).appendTo("#maincont");
 
 
        $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=ae34bd27a7623c8315fbe0cc73cd9ca6&per_page=12&sort=relevance&nojsoncallback=1",
@@ -62,7 +62,7 @@ $(window).scroll(function () {
       
       
       
-      $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo(".row" > "#pagerow"+page);
+      $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo( "#pagerow"+page );
       
       
  
