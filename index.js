@@ -22,7 +22,7 @@ $(function(){
       
       
       
-      $("<div/>").attr("class", "col-md-4").appendTo(".row").append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>"));
+      $("<div/>").attr("class", "col-md-4").appendTo(".row").append("<p>lol</p>");
       
       
 		//$("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>");
