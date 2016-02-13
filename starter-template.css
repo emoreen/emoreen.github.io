@@ -20,6 +20,14 @@
 	}
 }
 
+.col-md-4{
+  display: block;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+
+
 .container-full {
 	padding: 0 !important;
 	margin: 0 auto;
