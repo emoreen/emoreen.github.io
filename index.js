@@ -62,7 +62,7 @@ $(window).scroll(function () {
       
       
       
-      $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo(".row" "#pagerow"+page);
+      $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo(".row" > "#pagerow"+page);
       
       
  
