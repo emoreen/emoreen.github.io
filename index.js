@@ -22,7 +22,7 @@ $(function(){
       
       
       
-      $("<div/>").attr("class", "col-md-4").append($("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive"))).appendTo(".row");
+      $("<div/>").attr("class", "testcol-md-4").append($("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive"))).appendTo(".row");
       
       
 		//$("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>");
@@ -73,7 +73,7 @@ $(window).scroll(function () {
       
       
       
-      $("<div/>").attr("class", "col-md-4").append($("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive"))).appendTo(".row");
+      $("<div/>").attr("class", "testcol-md-4").append($("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive"))).appendTo(".row");
       
       
  
