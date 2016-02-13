@@ -44,8 +44,9 @@ $(window).scroll(function () {
     if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
 
 
+	var currow = "row"+page;
 
-	$("<div/>").attr("class", "row"+page).attr("id", "row"+page).appendTo("#maincont");
+	$("<div/>").attr("class", currow).attr("id", "row"+page).appendTo("#maincont");
 
 
 
@@ -65,7 +66,7 @@ $(window).scroll(function () {
       
       
       
-      $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo(".row"+page);
+      $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo(currow);
       
       
  
