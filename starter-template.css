@@ -12,6 +12,7 @@
 	.col-md-4 {
 		padding-top: 1em;
 		max-height: 5em;
+		overflow: hidden;
 	}
 }
 
