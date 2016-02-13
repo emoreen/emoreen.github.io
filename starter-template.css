@@ -11,6 +11,7 @@
 @media (min-width: 768px) {
 	.col-md-4 {
 		padding-top: 1em;
+		max-height: 5em;
 	}
 }
 
