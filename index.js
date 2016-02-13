@@ -2,9 +2,7 @@ $(function(){
 
    $("#mainsearch").submit(function () {
 
-      //alert( "Handler for .submit() called." );
-      $(".col-md-4").remove();
-      //$("<div>").attr("class", "row").appendTo('.container contentdummy');
+      $(".img-resonsive").remove();
       
       
       
@@ -12,7 +10,6 @@ $(function(){
         {
 			
             text: $("#srch-term").val(),
-            is_commons: "true",
             format: "json"
             
         }, function( data ) {
@@ -24,14 +21,7 @@ $(function(){
       
       
       $("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo(".row");
-      
-      
-		//$("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>");
-      
-      
-      
-			//alert(item.id);
-      
+     
       
       
 			});
@@ -63,7 +53,6 @@ $(window).scroll(function () {
         {
 			
             text: $("#srch-term").val(),
-            is_commons: "true",
             format: "json",
             page: page
             
