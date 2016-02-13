@@ -9,6 +9,10 @@
 
 
 @media (min-width: 768px) {
+	.img-responsive{
+	padding-top: 1em;	
+	}
+	
 	.col-md-4 {
 		padding-top: 1em;
 		max-height: 20em;
@@ -22,6 +26,9 @@
 }
 
 @media (max-width: 768px) {
+	.img.responsive{
+	padding-top: 2px;	
+	}
 	.col-md-4 {
 		padding-top: 2px;
 	}
