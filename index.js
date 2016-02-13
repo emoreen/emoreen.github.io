@@ -4,7 +4,7 @@ $(function(){
 
       //alert( "Handler for .submit() called." );
       $(".row").remove();
-      $("<div>").attr("class", "row").appendTo('#container [data-role="content"]');
+      $("<div>").attr("class", "row").appendTo('.container contentdummy');
       
       
       
@@ -21,7 +21,14 @@ $(function(){
 		$.each(data.photos.photo, function(i,item){
       
       
-			alert(item.id);
+      
+      $("<div/>").attr("class", "col-md-4").appendTo(".row").append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>"));
+      
+      
+		//$("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").wrap("<a href=" + item.id + "></a>");
+      
+      
+			//alert(item.id);
       
       
       
