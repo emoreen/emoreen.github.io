@@ -2,7 +2,7 @@ $(function(){
 
    $("#mainsearch").submit(function () {
 
-      $(".img-resonsive").remove();
+      $(".img-responsive").remove();
       
       
       
