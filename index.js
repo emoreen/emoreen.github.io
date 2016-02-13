@@ -44,10 +44,6 @@ $(window).scroll(function () {
     if ($(document).height() <= $(window).scrollTop() + $(window).height()) {
 
 
-	var currow = "row"+page;
-
-	$("<div/>").attr("class", currow).attr("id", "row"+page).appendTo("#maincont");
-
 
 
 
