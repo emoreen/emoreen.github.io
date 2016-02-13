@@ -3,8 +3,8 @@ $(function(){
    $("#mainsearch").submit(function () {
 
       //alert( "Handler for .submit() called." );
-      $(".row").remove();
-      $("<div>").attr("class", "row").appendTo('.container contentdummy');
+      $(".col-md-4").remove();
+      //$("<div>").attr("class", "row").appendTo('.container contentdummy');
       
       
       
