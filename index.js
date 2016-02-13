@@ -12,8 +12,7 @@ $(function(){
         {
 			
             text: $("#srch-term").val(),
-            format: "json",
-            orientation: "landscape"
+            format: "json"
             
         }, function( data ) {
 			
