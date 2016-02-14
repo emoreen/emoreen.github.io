@@ -19,76 +19,42 @@ Sökfunktionen använder sig av fotosajten Flickr:s API för att hämta hem foto
 Vi har valt att skapa en väldigt enkel design för hemsidan, och det mesta i den grundar sig direkt i Bootstraps funktionalitet. Exempelvis finns det ett tillhörande bibliotek av ikoner kallade Glyphicons som vi använde oss av till knapparna på hemsidan. För att få ikoner för knappar till Facebook och Twitter var vi dock tvungna att använda ett annat ikonbibliotek, FontAwesome (https://fortawesome.github.io/Font-Awesome/). Logotypen till hemsidan och en startbild skapade vi själva i Illustrator.
 
 Efter att ha jobbat på projektet i en vecka lyckades vi relativt väl med våra föresatser. Tyvärr visade det sig att Flickr inte har någon inbyggd funktion för att söka efter bilder bara i landskaps- eller porträtt-orientering, vilket gjorde att vi för tillfället inte kunde implementera en funktion som ska byta bildurvalet från det ena till det andra beroende på skärmstorlek. Vi brottades också en del med att få bildvisningen i lightbox att fungera som det var tänkt men hann inte klart före deadline.
-Tidsrapport
 
+## Tidsrapport ##
 
+| Martin Bergström      | Jonas Gabrielson | Erik Wistrand | Totalt |    |
+|-----------------------|------------------|---------------|--------|----|
+| Förarbete & Planering | 3                | 3             | 3      | 9  |
+| Bakgrundsstudier      |                  | 4             | 4      | 8  |
+| HTML & CSS            | 6                | 6             | 5      | 17 |
+| Javascript            | 10               | 3             | 2      | 15 |
+| Illustration          |                  | 2             |        | 2  |
+| Dokumentation         | 1                | 4             | 2      | 7  |
+| Totalt                | 20               | 22            | 16     | 56 |
 
-Martin Bergström
-Jonas Gabrielson
-Erik Wistrand
-Totalt
-Förarbete & Planering
-3
-3
-3
-9
-Bakgrundsstudier
-
-
-4
-4
-8
-HTML & CSS
-6
-6
-5
-17
-Javascript
-10
-3
-2
-15
-Illustration
-
-
-2
-
-
-2
-Dokumentation
-1
-4
-2
-7
-Totalt
-20
-22
-16
-56
-
-
-
 ## Utvecklardagbok, Jonas Gabrielson
+
 ### Måndag 8/2, 14-15
 Inledande gruppmöte. Vi hälsade på varandra och började diskutera inriktningen på vårt arbete. Vi kom fram till en grundidé och ajournerade för att fundera vidare hemma.
+
 ### Tisdag 9/2, 12-15
 Jag skissade fram lite enkla pappersprototyper medan de andra gjorde en prototyp på dator för att skapa oss en uppgift om hur vi ville att hemsidan skulle se ut. Diskuterade lite tekniska lösningar och läste på om Bootstrap.
+
 ### Onsdag 10/2, 12-15
 Påbörjade utvecklingen av hemsidan. Skapade ett projekt på Github, laddade ned Bootstrap och skapade en grundläggande html-kod med länkar till Bootstraps css och js. Samarbetade med de andra i gruppen för att fortsätta utvecklingen. Lade in sökruta, navbar och lite grundläggande element.
+
 ### Torsdag 11/2, 12-15
 Skapade menyknappar med ikoner. Valde ett namn för hemsidan (“Tapet”) och skapade en logotyp i Illustrator som jag sedan placerade in på menyraden. Förfinade bildvisaren genom att lägga in knappar för nedladdning, Facebook och Twitter. Skapade en länk till ikonbiblioteket FontAwesome för kunna använda korrekta ikoner på dessa knappar. Läste på mer om Bootstrap.
+
 ### Fredag 12/2, 14-18
 Fortsatt utveckling av hemsidan, nu med en fungerande sökfunktion. Hjälpte till att skapa en bra design för kolumner och bildvisning.
+
 ### Lördag 13/2, 14-19 + 21-23
 Skapade en splash-bild i Illustrator som visas när hemsidan laddas för första gången. Gjorde även en ny logotyp med wordmark (typsatt hemsidestitel) och lade in den. Hjälpte till att identifiera och lösa problemet med varför bilderna inte bara fyller på under existerande bilder när Lazy load aktiverar. Rensade upp i koden för att göra den mer läslig och korrekt indenterad. Skapade en favicon.
+
 ### Söndag 14/2, 14-18 + 20-24
 Dokumentation, lite vidare kodrensning.
 
-
-
-
-
-
 ## Logg, Erik Wistrand
  
 ### Måndag – 8/2, 14-15
@@ -107,14 +73,12 @@ Fortsatte att designa sidan med ikoner och en logga. Vi valde också att lägga 
 Fortsatt utveckling av hemsidan. Fokuserade på sökfunktionen och design.
 
 ### Söndag – 14/2, 17-19
-Sammanställa dokumentationen och avsluta arbetet.
-
-
-
-
+Sammanställa dokumentationen och avsluta arbetet.
 ## Utvecklardagbok, Martin Bergström
+
 ### Måndag – 8/2, 14-15
 Första möte med gruppen. Vi diskuterade olika förslag på projekt och valde sedermera ett fotogalleri med api-funktion.
+
 ### Tisdag – 9/2, 12-15
 Skapade “mockups” i paint.net för att påvisa ungefär hur sidan skall se ut. Skuggat igenom dokumentation jquery för jsonp.
 
