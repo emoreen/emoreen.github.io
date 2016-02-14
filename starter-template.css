@@ -101,3 +101,7 @@
 .lightgreen {
 	color: lightgreen;
 }
+
+li:hover {
+	background-color: gray;
+}
