@@ -17,6 +17,7 @@ $(function(){
 	}); 
 
 	$(".glyphicon-fire").click(function () {
+		console.log("Trending click");
 		$(".img-responsive").remove();
 		$(".col-md-12").remove();
 
@@ -24,7 +25,7 @@ $(function(){
 			format: "json"
 		}, function( data ) {
 			$.each(data.photos.photo, function(i,item){
-				$("<a/>").attr("href", "image.html#"+item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "img-responsive")).appendTo(".row");
+				$("<a/>").attr("href", "#").append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "thumbnail img-responsive")).appendTo(".row");
 			});
 		});
 		
@@ -45,7 +46,7 @@ $(function(){
 				page: page
 			}, function( data ) {
 				$.each(data.photos.photo, function(i,item){
-					$("<a/>").attr("href", "image.html#"+item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "img-responsive")).appendTo( currentrow );
+					$("<a/>").attr("href", "image.html#"+item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "thumbnail img-responsive")).appendTo( currentrow );
 				});
 			});
 	
@@ -53,7 +54,28 @@ $(function(){
 	
 		}
 	});
-
+	
+	$(".thumbnail").click(function (event) {
+		event.preventDefault();
+		console.log("Thumbnail click");
+		$(".modal-body").empty();
+		var title = $(this).parent("a").attr("title");
+		$(".modal-title").html(title);
+		$($(this).parents("div").html()).appendTo(".modal-body");
+		$("#myModal").modal({show:true});
+	});
+	
+/*
+	$('a.thumb').click(function(event){
+    	event.preventDefault();
+    	var content = $('.modal-body');
+    	content.empty();
+      	var title = $(this).attr("title");
+      	$('.modal-title').html(title);      	
+      	content.html($(this).html());
+      	$(".modal-profile").modal({show:true});
+    });
+*/
 });
 
 

@@ -105,3 +105,13 @@
 li:hover {
 	background-color: #3e3e3e;
 }
+
+.modal-dialog {
+	width:600px;
+}
+
+.thumbnail {
+	margin-bottom:6px;
+	border: none;
+	padding: 0px;
+}
