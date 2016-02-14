@@ -16,6 +16,21 @@ $(function(){
 	return false;
 	}); 
 
+	$(".glyphicon-fire").click(function () {
+		$(".img-responsive").remove();
+		$(".col-md-12").remove();
+
+		$.getJSON("https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=8b1d3641d8f148e36f6d113e4075661c&per_page=12&format=json&nojsoncallback=1&api_sig=eb66b06c4f2f5645da16df95d9efc4e2", {
+			format: "json"
+		}, function( data ) {
+			$.each(data.photos.photo, function(i,item){
+				$("<a/>").attr("href", "image.html#"+item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+".jpg").attr("class", "img-responsive")).appendTo(".row");
+			});
+		});
+		
+	return false;
+	}); 
+
 
 	var page = 2;
 	
