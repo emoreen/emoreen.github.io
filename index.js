@@ -30,11 +30,10 @@ $(function(){
 				page: page
 			}, function( data ) {
 				$.each(data.photos.photo, function(i,item){
-					$("<a/>").attr("href", item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo( currentrow );
+					$("<a/>").attr("href", "image.html#"+item.id).append($("<img/>").attr("src", "https://farm"+item.farm+".staticflickr.com/"+item.server+"/"+item.id+"_"+item.secret+"_c.jpg").attr("class", "img-responsive")).appendTo( currentrow );
 				});
 			});
 	
-		//$("<b/>").appendTo(".row");
 		page = page + 1;
 	
 		}
