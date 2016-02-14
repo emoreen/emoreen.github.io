@@ -13,7 +13,7 @@ $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&a
 		}, function( data ) {
 			$.each(data.sizes.size, function(i,item){
 				
-				if (item.width => itersize){
+				if (item.width >= itersize){
 					
 					//$("<img/>").attr("src", item.source).attr("class", "img-responsive").attr("id", "fullimg").appendTo(".container");
 					itersize = item.width;
