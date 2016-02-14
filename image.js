@@ -11,6 +11,7 @@ $.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&a
 			format: "json",
 			photo_id: hash
 		}, function( data ) {
+			console.log(data);
 			$.each(data.sizes.size, function(i,item){
 				
 				if (item.width >= itersize){
